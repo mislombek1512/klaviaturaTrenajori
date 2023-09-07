@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="klaviaturada tez yozish, klaviaturada tez yozish online, klaviaturada tez yozish o'yin, Islombek Baxromov, alicoder, alicoder.uz">
+   <meta name="googlebot"
+        content="klaviaturada tez yozish, klaviaturada tez yozish online, klaviaturada tez yozish o'yin, Islombek Baxromov, alicoder, alicoder.uz">
+    <meta name="google"
+        content="klaviaturada tez yozish, klaviaturada tez yozish online, klaviaturada tez yozish o'yin, Islombek Baxromov, alicoder, alicoder.uz">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, klaviaturada tez yozish, klaviaturada tez yozish online, klaviaturada tez yozish o'yin, Islombek Baxromov, alicoder, alicoder.uz, amaliyot, klaviaturada, klaviatura, islom, baxromov, tez yozish, klaviaturada yozish">
+    <meta name="author" content="Islom Baxromov || Alicoder.uz || Alicoder">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Klaviatura trenajori || Abdulloh</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 p-0 text-center">
+                <div class="card rounded-0 text-bg-success mb-3">
+                    <div class="card-header title pt-4">
+                        <h2 class="font-monospace">Klaviatura trenajori</h2>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn startbtns btn-outline-warning mb-2" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Boshlash</button>
+                        <p class="card-text AboutText font-monospace">Boshlash tugmasini bosing hamda kerakli vaqt
+                            tanlab quyida chiqadigan
+                            harflarni klaviaturadan kiriting. Omad!</p>
+                        <h3 class="time">0</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <button class="btn btn-success" id="true_answer">0</button>
+            </div>
+            <div class="col-6 text-center">
+                <button class="btn btn-danger" id="false_answer">0</button>
+            </div>
+            <div class="col-12 mt-5 text-center">
+                <button class="btn d-none letterBtn col-1 btn-primary">
+                    <h1 data-letter></h1>
+                </button>
+                <button class="btn d-none resetBtn btn-outline-success mt-3 d-block mx-auto">Qaytadan boshlash</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">O'zingizni tanishtiring</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ismizni kiriting</label>
+                        <input type="text" class="form-control" id="name">
+                        <button class="btn btn-warning btn-sm mt-2 NameEditBtn d-none">Edit</button>
+                    </div>
+                    <div class="mb-3">
+                        <label for="second" class="form-label">Necha sekund bajarmoqchisiz?</label>
+                        <select name="second" id="second" class="form-select">
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Orqaga</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn startbtn btn-primary">Boshlash</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
